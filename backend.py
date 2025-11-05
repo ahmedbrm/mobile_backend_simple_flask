@@ -40,7 +40,7 @@ if __name__ == "__main__":
 @app.route('/users.get')
 def get_users():
 	data={
-     	'title':'List of Categories',
+     	'title':'List of saved users',
        	'categories':[
             	{'id':1,'name':'Ahmed' , 'passw' : '112233'},
              	{'id':2,'name':'Idris' , 'passw' : '112222'},
