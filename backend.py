@@ -37,3 +37,13 @@ if __name__ == "__main__":
 	app.run(port=8080)
 
 
+@app.route('/users.get')
+def get_users():
+	data={
+     	'title':'List of Categories',
+       	'categories':[
+            	{'id':1,'name':'Ahmed' , 'passw' : '112233'},
+             	{'id':2,'name':'Idris' , 'passw' : '112222'},
+              	{'id':3,'name':'Yacine' , 'passw' : '111111'}]
+       }
+	return json.dumps(data)
